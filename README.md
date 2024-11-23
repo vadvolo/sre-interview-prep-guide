@@ -9,7 +9,21 @@ Contributions are always welcome!
 
 ## Basics
 
-- [ ] Simple: [What happens when you type in ‘www.cnn.com’ in your browser?](https://syedali.net/2013/08/18/what-happens-when-you-type-in-www-cnn-com-in-your-browser)
+- [x] Simple: [What happens when you type in ‘www.cnn.com’ in your browser?](https://syedali.net/2013/08/18/what-happens-when-you-type-in-www-cnn-com-in-your-browser)
+  - DNS Request
+    1. check local cache
+    2. send dns-request to dns-servier in resolv.conf
+    3. default router send request to .root server
+    4. root server send request to the 2nd-layer domain
+    5. perform dns-lookup on the servers
+    6. get ip-address
+  - TCP Session Establishing
+    1. send packet with dst ip from dns to default router
+    2. ...
+    3. syn, sync-ack, ack
+    4. TCP Session Established
+  - HTTP
+    - balancing
 - [ ] Detailed: [What happens when you type google.com into your browser's address box and press enter?](https://github.com/alex/what-happens-when)
 
 ## Linux
